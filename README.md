@@ -16,7 +16,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install say-wu-style
+ember install @lblod/say-wu-style
 ```
 
 
