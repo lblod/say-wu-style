@@ -1,1 +1,0 @@
-export { default } from '@lblod/say-wu-style/components/say/hint/list/list-item';
