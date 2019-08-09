@@ -1,3 +1,10 @@
-<li class="link-list__item">
-  {{yield}}
+<li class="list__item u-padding--round--tiny u-border--light--bottom">
+	<div class="vl-grid">
+		<div class="vl-col--8-12">
+		  <p class="small">{{yield}}</p>
+		</div>
+		<div class="vl-col--4-12 u-align-right">
+		  <Say::Button @width="narrow" @onClick={{@execute}}>{{@actionLabel}}</Say::Button>
+		</div>
+	</div>
 </li>

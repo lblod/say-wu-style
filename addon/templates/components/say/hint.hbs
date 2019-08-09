@@ -1,4 +1,10 @@
-{{yield
-  (hash
-    header=(component "say/hint/header")
-    list=(component "say/hint/list"))}}
+<div class="vl-modal">
+	<div class={{concat "vl-modal-dialog " sizeClass " " typeClass}}>
+		{{yield
+		  (hash
+		    header=(component "say/hint/header")
+		    list=(component "say/hint/list")
+		    content=(component "say/hint/content")
+		    footer=(component "say/hint/footer"))}}
+	</div>
+</div>

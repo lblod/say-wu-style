@@ -1,0 +1,7 @@
+<button
+	class={{concat "button " sizeClass " " widthClass " " styleClass " " disabledClass}}
+	{{action @onClick}}
+	disabled={{this.disabled}}
+	...attributes>
+	{{yield}}
+</button>

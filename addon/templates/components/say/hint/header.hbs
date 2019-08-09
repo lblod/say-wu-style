@@ -1,16 +1,16 @@
-<div class="modal-dialog__header">
-  <div class="grid">
-    <div class="col--10-12">
-      <p>
-        <strong>{{yield}}</strong>
-      </p>
-    </div>
-    {{#if @closeHint}}
-      <div class="col--2-12 u-align-right">
-        <a class="link--icon--close" href="#" {{action @closeHint}}>
-          <span class="u-visually-hidden">Venster sluiten</span>
-        </a>
-      </div>
-    {{/if}}
-  </div>
+<div class="vl-modal-dialog__header">
+	<div class="vl-grid">
+	  <div class="vl-col--10-12">
+	    <p class="vl-modal-dialog__title">
+	    	{{yield}}
+	    </p>
+	  </div>
+	  {{#if this.closeHint}}
+	    <div class="vl-col--2-12 u-align-right">
+	      <a class="link--icon--close" href="#" {{action this.closeHint}}>
+	        <span class="u-visually-hidden">Venster sluiten</span>
+	      </a>
+	    </div>
+	  {{/if}}
+	</div>
 </div>

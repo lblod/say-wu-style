@@ -1,0 +1,6 @@
+<div class={{concat "vl-modal-dialog__content " paddingClass}}>
+	{{yield
+		(hash
+			time=(component "say/-internal/input-time")
+		 	date=(component "say/-internal/input-date"))}}
+</div>
