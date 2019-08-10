@@ -1,6 +1,7 @@
 <Wu::Input
-	type="number"
-	@value="100"
-	min="0"
-	max="1000"
-	@onChange={{action "hello"}} />
+	@type="number"
+	@value={{this.value}}
+  @allowLeadingZeroInValue={{this.allowLeadingZeroInValue}}
+	min={{this.min}}
+	max={{this.max}}
+	@onChange={{this.onChange}} />

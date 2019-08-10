@@ -1,6 +1,6 @@
 <button
 	class={{concat "button " sizeClass " " widthClass " " styleClass " " disabledClass}}
-	{{action @onClick}}
+	{{action this.onClick}}
 	disabled={{this.disabled}}
 	...attributes>
 	{{yield}}

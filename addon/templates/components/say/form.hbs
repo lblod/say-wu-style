@@ -1,0 +1,7 @@
+<form {{on "submit" this.handleSubmit}} class="form">
+  {{yield (hash
+    time=(component "say/-internal/input-time")
+    date=(component "say/-internal/input-date"))}}
+
+  <button type="submit" class="u-hidden">submit button</button>
+</form>
