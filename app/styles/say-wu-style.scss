@@ -60,16 +60,18 @@ $orange-light:			#FFE843;
   Dialog
  ========================================================================== */
 
-.vl-modal-dialog--small {
-	width: 35rem;
-	padding: 2rem 2rem 2.2rem;
-}
-
 .vl-modal-dialog--sectioned {
 	padding: 0;
 
+	.vl-modal-dialog__header,
+	.vl-modal-dialog__footer {
+
+		&:not([class^="u-padding"]) {
+			padding: 2rem;
+		}
+	}
+
 	.vl-modal-dialog__header {
-		padding: 2rem;
 		border-bottom: 1px solid $blue-gray-light;
 
 		.vl-modal-dialog__title {
@@ -83,12 +85,43 @@ $orange-light:			#FFE843;
 		}
 	}
 
+	.vl-modal-dialog__content {
+		max-height: 27rem;
+		overflow-y: auto;
+	}
+
 	.vl-modal-dialog__footer {
-		padding: 2rem;
 		border-top: 1px solid $blue-gray-light;
 
 		.vl-action-group {
 			margin-top: 0;
+		}
+	}
+
+	.vl-modal-dialog__header + .vl-modal-dialog__footer {
+		border-top: 0;
+	}
+}
+
+.vl-modal-dialog.vl-modal-dialog--small {
+	width: 35rem;
+	padding: 2rem 2rem 2.2rem;
+
+	&.vl-modal-dialog--sectioned {
+		.vl-modal-dialog__header,
+		.vl-modal-dialog__footer {
+
+			padding: 1.5rem;
+		}
+	}
+
+	.vl-modal-dialog__title {
+		line-height: 1.2;
+		font-size: 1.8rem;
+
+		p {
+			font-family: "flanders-sans";
+			color: $gray;
 		}
 	}
 }
