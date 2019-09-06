@@ -1,7 +1,9 @@
 <Wu::Input
+	@width={{@width}}
 	@type="number"
 	@value={{this.value}}
   @allowLeadingZeroInValue={{this.allowLeadingZeroInValue}}
 	min={{this.min}}
 	max={{this.max}}
-	@onChange={{this.onChange}} />
+	@onChange={{this.onChange}}
+	...attributes />
