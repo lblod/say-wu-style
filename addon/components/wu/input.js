@@ -23,6 +23,12 @@ export default Component.extend({
     }
     return "";
   }),
+	widthClass: computed( 'width', function() {
+    if( this.width == "block" ){
+      return "vl-input-field--block";
+    }
+    return "";
+  }),
   inputType: computed( 'type', function() {
     if( this.type === "number" && this.allowLeadingZeroInValue ) {
       return "text";
