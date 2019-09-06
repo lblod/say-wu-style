@@ -1,7 +1,9 @@
-<form {{on "submit" this.handleSubmit}} class="form">
+<form {{on "submit" this.handleSubmit}} class="vl-form">
   {{yield (hash
     time=(component "say/-internal/input-time")
     date=(component "say/-internal/input-date"))}}
 
-  <button type="submit" class="u-hidden">submit button</button>
+  <div class="vl-action-group">
+	  <button type="submit" class="u-hidden">submit button</button>
+	</div>
 </form>

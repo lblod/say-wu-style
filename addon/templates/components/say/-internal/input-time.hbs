@@ -1,26 +1,22 @@
-<div class="form__row">
-  <div class="double-input js-double-input">
-    <div class="double-input__inputs">
-      <div class="double-input__input">
-        <Say::Label>Tijdstip uur</Say::Label>
-        <Say::InputNumber
-          @width="block"
-          @type="number"
-          @value={{this.hours}}
-          @onChange={{this.onChangeHours}}
-          @min="0"
-          @max="23" />
-      </div>
-      <div class="double-input__input">
-        <Say::Label>minuten</Say::Label>
-        <Say::InputNumber
-          @width="block"
-          @type="number"
-          @value={{this.minutesString}}
-          @allowLeadingZeroInValue={{true}}
-          @onChange={{this.onChangeMinutes}}
-          @min="0" @max="59" />
-      </div>
-    </div>
+<div class="vl-form-grid">
+  <div class="vl-col--6-12">
+    <Say::Label>Tijdstip uur</Say::Label>
+    <Say::InputNumber
+      @width="block"
+      @type="number"
+      @value={{this.hours}}
+      @onChange={{this.onChangeHours}}
+      @min="0"
+      @max="23" />
+  </div>
+  <div class="vl-col--6-12">
+    <Say::Label>minuten</Say::Label>
+    <Say::InputNumber
+      @width="block"
+      @type="number"
+      @value={{this.minutesString}}
+      @allowLeadingZeroInValue={{true}}
+      @onChange={{this.onChangeMinutes}}
+      @min="0" @max="59" />
   </div>
 </div>
