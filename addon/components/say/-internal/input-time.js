@@ -4,7 +4,7 @@ import layout from '../../../templates/components/say/-internal/input-time';
 
 export default class SayInternalInputTimeComponent extends Component {
   layout = layout
-  
+
   tagName = ""
 
   @computed('minutes')
