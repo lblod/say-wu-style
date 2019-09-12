@@ -29,7 +29,7 @@ export default Component.extend({
       return "vl-button--secondary";
     }
     if( this.style == "alt" ){
-      return "button--alt";
+      return "vl-button--alt";
     }
     if( this.style == "blue" ){
       return "vl-button--alt vl-button--alt--blue";

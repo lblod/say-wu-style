@@ -4,7 +4,11 @@
 		  <p class="small">{{yield}}</p>
 		</div>
 		<div class="vl-col--4-12 u-align-right">
-		  <Say::Button @width="narrow" @onClick={{@execute}}>{{@actionLabel}}</Say::Button>
+			{{#if actionLabel}}
+			  <Say::Button @width="narrow" @onClick={{@execute}}>
+					{{@actionLabel}}
+				</Say::Button>
+			{{/if}}
 		</div>
 	</div>
 </li>

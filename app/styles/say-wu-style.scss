@@ -125,3 +125,40 @@ $orange-light:			#FFE843;
 		}
 	}
 }
+
+
+.vl-modal-dialog.vl-modal-dialog--wide {
+	width: 90vw;
+	max-width: none;
+
+	&.vl-modal-dialog--sectioned {
+		padding: 0;
+	}
+
+	&.vl-modal-dialog--sectioned .vl-modal-dialog__content > * {
+		max-height: 60vh;
+	}
+}
+
+.vl-modal__backdrop {
+	z-index: 805;
+}
+
+.vl-button.vl-button--alt {
+	background-color: $white;
+	color: $gray-dark;
+	border: 1px solid $blue-gray-light;
+
+	&:hover {
+		color: $black;
+    background-color: $blue-gray-lightest;
+    border-color: $blue-gray-light;
+	}
+}
+
+.annotation-suggestion__suggestion .vl-modal-dialog.vl-modal-dialog--sectioned,
+.vl-modal-dialog.vl-modal-dialog--sectioned {
+    padding: 0;
+    overflow: hidden;
+    max-height: none;
+}

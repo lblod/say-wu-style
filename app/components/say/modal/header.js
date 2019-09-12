@@ -1,0 +1,1 @@
+export { default } from '@lblod/say-wu-style/components/say/modal/header';

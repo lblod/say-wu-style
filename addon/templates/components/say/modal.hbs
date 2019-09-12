@@ -1,0 +1,11 @@
+<div class="vl-modal">
+	<div class="vl-modal__backdrop">
+	</div>
+	<div class={{concat "vl-modal-dialog " sizeClass " " typeClass}}>
+		{{yield
+		  (hash
+		    header=(component "say/modal/header")
+		    content=(component "say/modal/content")
+		    footer=(component "say/modal/footer"))}}
+	</div>
+</div>
